@@ -1,0 +1,34 @@
+# Exercises workspace: `cargo test -p <crate>` grades your code.
+# Reference solutions live in a separate workspace (solutions/) that compiles the
+# same test files against solutions/<exercise>/src: `cargo solutions -p <crate>`.
+[workspace]
+resolver = "3"
+members = ["exercises/*"]
+exclude = ["solutions"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[workspace.dependencies]
+anyhow = "1.0.104"
+axum = "0.8.9"
+clap = { version = "4.6.7", features = ["derive", "env"] }
+csv = "1.4.0"
+http-body-util = "0.1.5"
+jiff = "0.2.42"
+proptest = "1.12.0"
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tempfile = "3.27.0"
+thiserror = "2.0.21"
+tokio = { version = "1.54.1", features = ["full", "test-util"] }
+tower = { version = "0.5.3", features = ["util"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter", "json", "registry", "fmt"] }

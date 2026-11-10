@@ -1,0 +1,43 @@
+[package]
+name = "ex11_ownership_and_lifetimes"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+
+[dev-dependencies]
+proptest.workspace = true
+
+[[test]]
+name = "text"
+path = "../../exercises/11_ownership_and_lifetimes/tests/text.rs"
+
+[[test]]
+name = "ini"
+path = "../../exercises/11_ownership_and_lifetimes/tests/ini.rs"
+
+[[test]]
+name = "warehouse"
+path = "../../exercises/11_ownership_and_lifetimes/tests/warehouse.rs"
+
+[[test]]
+name = "org"
+path = "../../exercises/11_ownership_and_lifetimes/tests/org.rs"
+
+[[test]]
+name = "interner"
+path = "../../exercises/11_ownership_and_lifetimes/tests/interner.rs"
+
+[[test]]
+name = "graph"
+path = "../../exercises/11_ownership_and_lifetimes/tests/graph.rs"
+
+[[test]]
+name = "store"
+path = "../../exercises/11_ownership_and_lifetimes/tests/store.rs"

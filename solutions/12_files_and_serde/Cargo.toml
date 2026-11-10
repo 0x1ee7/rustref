@@ -1,0 +1,45 @@
+[package]
+name = "ex12_files_and_serde"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+csv.workspace = true
+jiff.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[[test]]
+name = "scan_hash"
+path = "../../exercises/12_files_and_serde/tests/scan_hash.rs"
+
+[[test]]
+name = "diff_apply"
+path = "../../exercises/12_files_and_serde/tests/diff_apply.rs"
+
+[[test]]
+name = "json_serde"
+path = "../../exercises/12_files_and_serde/tests/json_serde.rs"
+
+[[test]]
+name = "atomic"
+path = "../../exercises/12_files_and_serde/tests/atomic.rs"
+
+[[test]]
+name = "csv_report"
+path = "../../exercises/12_files_and_serde/tests/csv_report.rs"
+
+[[test]]
+name = "snapshot"
+path = "../../exercises/12_files_and_serde/tests/snapshot.rs"

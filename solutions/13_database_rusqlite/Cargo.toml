@@ -1,0 +1,23 @@
+[package]
+name = "ex13_database_rusqlite"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[[test]]
+name = "database"
+path = "../../exercises/13_database_rusqlite/tests/database.rs"
+
+[dependencies]
+jiff.workspace = true
+rusqlite = { workspace = true, features = ["trace"] }
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+tempfile.workspace = true

@@ -1,0 +1,48 @@
+[package]
+name = "ex15_async_tokio"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+tokio.workspace = true
+tracing-subscriber.workspace = true
+
+[[test]]
+name = "part1_fanout"
+path = "../../exercises/15_async_tokio/tests/part1_fanout.rs"
+
+[[test]]
+name = "part2_cancellation"
+path = "../../exercises/15_async_tokio/tests/part2_cancellation.rs"
+
+[[test]]
+name = "part3_bounded"
+path = "../../exercises/15_async_tokio/tests/part3_bounded.rs"
+
+[[test]]
+name = "part4_broker"
+path = "../../exercises/15_async_tokio/tests/part4_broker.rs"
+
+[[test]]
+name = "part5_pool"
+path = "../../exercises/15_async_tokio/tests/part5_pool.rs"
+
+[[test]]
+name = "part6_resources"
+path = "../../exercises/15_async_tokio/tests/part6_resources.rs"
+
+[[test]]
+name = "part7_resilience"
+path = "../../exercises/15_async_tokio/tests/part7_resilience.rs"

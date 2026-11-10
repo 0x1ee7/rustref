@@ -1,0 +1,41 @@
+[package]
+name = "ex02_function_parameters"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[[test]]
+name = "headers"
+path = "../../exercises/02_function_parameters/tests/headers.rs"
+
+[[test]]
+name = "request_builder"
+path = "../../exercises/02_function_parameters/tests/request_builder.rs"
+
+[[test]]
+name = "url_encoding"
+path = "../../exercises/02_function_parameters/tests/url_encoding.rs"
+
+[[test]]
+name = "retry_transport"
+path = "../../exercises/02_function_parameters/tests/retry_transport.rs"
+
+[[test]]
+name = "query_builder"
+path = "../../exercises/02_function_parameters/tests/query_builder.rs"
+
+[[test]]
+name = "user_patch"
+path = "../../exercises/02_function_parameters/tests/user_patch.rs"

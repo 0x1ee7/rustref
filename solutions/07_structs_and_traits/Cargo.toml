@@ -1,0 +1,23 @@
+[package]
+name = "ex07_structs_and_traits"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+csv.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[[test]]
+name = "structs_and_traits"
+path = "../../exercises/07_structs_and_traits/tests/structs_and_traits.rs"

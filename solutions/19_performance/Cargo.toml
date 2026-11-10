@@ -1,0 +1,36 @@
+[package]
+name = "ex19_performance"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+
+[[test]]
+name = "part1_log_parser"
+path = "../../exercises/19_performance/tests/part1_log_parser.rs"
+
+[[test]]
+name = "part2_buffers"
+path = "../../exercises/19_performance/tests/part2_buffers.rs"
+
+[[test]]
+name = "part3_vectors"
+path = "../../exercises/19_performance/tests/part3_vectors.rs"
+
+[[test]]
+name = "part4_inline_vec"
+path = "../../exercises/19_performance/tests/part4_inline_vec.rs"
+
+[[test]]
+name = "part5_strings"
+path = "../../exercises/19_performance/tests/part5_strings.rs"
+
+[[test]]
+name = "part6_layout"
+path = "../../exercises/19_performance/tests/part6_layout.rs"

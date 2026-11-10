@@ -1,0 +1,5 @@
+# Build context is the repository root; BuildKit only reads this file from there (see exercises README).
+**/target
+.git
+**/*.rs.bk
+.env

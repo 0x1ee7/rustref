@@ -1,0 +1,17 @@
+[package]
+name = "ex03_modules_and_visibility"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+thiserror.workspace = true
+
+[[test]]
+name = "modules_and_visibility"
+path = "../../exercises/03_modules_and_visibility/tests/modules_and_visibility.rs"

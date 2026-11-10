@@ -1,0 +1,18 @@
+[package]
+name = "ex14_threads_and_sync"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+
+[dev-dependencies]
+
+[[test]]
+name = "threads_and_sync"
+path = "../../exercises/14_threads_and_sync/tests/threads_and_sync.rs"

@@ -1,0 +1,5 @@
+[alias]
+# Run the exercise tests against the reference solutions (from the repo root):
+#   cargo solutions -p ex05_iterators
+# Shares ./target with the exercises workspace so dependencies compile once.
+solutions = "test --manifest-path solutions/Cargo.toml --target-dir target"

@@ -1,0 +1,20 @@
+[package]
+name = "ex01_collections"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[[test]]
+name = "collections"
+path = "../../exercises/01_collections/tests/collections.rs"

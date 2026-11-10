@@ -1,0 +1,24 @@
+[package]
+name = "ex06_functional_patterns"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+csv.workspace = true
+jiff.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[[test]]
+name = "functional_patterns"
+path = "../../exercises/06_functional_patterns/tests/functional_patterns.rs"

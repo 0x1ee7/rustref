@@ -1,0 +1,46 @@
+[package]
+name = "ex17_time_jiff"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+autotests = false
+
+[lints]
+workspace = true
+
+[dependencies]
+jiff.workspace = true
+thiserror.workspace = true
+
+[[test]]
+name = "zones"
+path = "../../exercises/17_time_jiff/tests/zones.rs"
+
+[[test]]
+name = "parsing"
+path = "../../exercises/17_time_jiff/tests/parsing.rs"
+
+[[test]]
+name = "arithmetic"
+path = "../../exercises/17_time_jiff/tests/arithmetic.rs"
+
+[[test]]
+name = "calendar"
+path = "../../exercises/17_time_jiff/tests/calendar.rs"
+
+[[test]]
+name = "meetings"
+path = "../../exercises/17_time_jiff/tests/meetings.rs"
+
+[[test]]
+name = "slots"
+path = "../../exercises/17_time_jiff/tests/slots.rs"
+
+[[test]]
+name = "relative"
+path = "../../exercises/17_time_jiff/tests/relative.rs"
+
+[[test]]
+name = "stopwatch"
+path = "../../exercises/17_time_jiff/tests/stopwatch.rs"
